@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 import { Plus, TrendingUp, TrendingDown, Edit, Trash2, Filter, Calendar } from 'lucide-react'
 
-const API_BASE = 'https://money-manager-backend-4zyg.onrender.com/api'
+const API_BASE = 'http://localhost:5000/api'
 
 function App() {
   const [stats, setStats] = useState({ income: 0, expense: 0, net: 0 })

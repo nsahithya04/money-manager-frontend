@@ -3,6 +3,7 @@ import axios from 'axios'
 import { Plus, TrendingUp, TrendingDown, Edit, Trash2, Filter, Calendar } from 'lucide-react'
 
 const API_BASE = import.meta.env.VITE_API_BASE_URL;
+console.log("API BASE =", import.meta.env.VITE_API_BASE_URL)
 
 
 function App() {

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 import { Plus, TrendingUp, TrendingDown, Edit, Trash2, Filter, Calendar } from 'lucide-react'
 
-const API_BASE = 'https://money-manager-backend-4zyg.onrender.com'
+const API_BASE = import.meta.env.VITE_API_BASE;
 
 
 function App() {

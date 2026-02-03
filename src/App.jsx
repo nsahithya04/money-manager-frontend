@@ -2,7 +2,8 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 import { Plus, TrendingUp, TrendingDown, Edit, Trash2, Filter, Calendar } from 'lucide-react'
 
-const API_BASE = 'https://money-manager-backend-production-318e.up.railway.app/api'
+const API_BASE = import.meta.env.VITE_API_BASE || 'https://money-manager-backend-production-318e.up.railway.app/api'
+
 
 function App() {
   const [stats, setStats] = useState({ income: 0, expense: 0, net: 0 })

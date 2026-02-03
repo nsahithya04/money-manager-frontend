@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 import { Plus, TrendingUp, TrendingDown, Edit, Trash2, Filter, Calendar } from 'lucide-react'
 
-const API_BASE = 'http://localhost:5000/api'
+const API_BASE = 'https://money-manager-frontend-pe2ov4wex-sahithyas-projects-7cb5afa0.vercel.app/'
 
 function App() {
   const [stats, setStats] = useState({ income: 0, expense: 0, net: 0 })
@@ -96,7 +96,7 @@ function App() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center p-8">
+      <div className="w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="max-w-sm w-full bg-white border border-gray-200 rounded-lg shadow-sm p-8 text-center">
           <div className="w-12 h-12 border-2 border-gray-300 border-t-blue-600 rounded-full animate-spin mx-auto mb-4" />
           <h2 className="text-lg font-medium text-gray-900 mb-1">Loading</h2>

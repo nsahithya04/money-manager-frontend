@@ -6,7 +6,7 @@ const API_BASE = import.meta.env.VITE_API_BASE_URL;
 console.log("API BASE =", API_BASE)
 console.log("API BASE =", import.meta.env.VITE_API_BASE_URL)
 
-
+fetch(`${API_BASE}/api/stats`);
 
 function App() {
   const [stats, setStats] = useState({ income: 0, expense: 0, net: 0 })
